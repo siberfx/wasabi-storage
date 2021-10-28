@@ -29,7 +29,7 @@ class WasabiServiceProvider extends ServiceProvider
 	{
 		Storage::extend('wasabi', function ($app, $config) {
 			$conf = [
-				'endpoint' => $config['endpoint'],
+				'endpoint' => "https://" . $config['bucket'] . ".s3." . $config['region'] . ".wasabisys.com/",
 				'bucket_endpoint' => true,
 				'credentials' => [
 					'key' => $config['key'],
