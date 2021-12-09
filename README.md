@@ -1,4 +1,9 @@
 # wasabi-storage
+<p align="center">
+    <br>
+    <a href="https://packagist.org/packages/siberfx/wasabi-storage" title="Latest Version on Packagist"><img src="https://img.shields.io/packagist/v/siberfx/wasabi-storage.svg?style=flat-square"></a>
+    <a href="https://packagist.org/packages/siberfx/wasabi-storage" title="Total Downloads"><img src="https://img.shields.io/packagist/dt/siberfx/wasabi-storage.svg?style=flat-square"></a>
+    <a href="https://github.com/siberfx/wasabi-storage/commits/master" title="Last commit"><img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/siberfx/wasabi-storage"></a>
 
 A [Wasabi](https://wasabi.com/) storage driver for Laravel.
 
@@ -8,14 +13,6 @@ This packages uses the AWS S3 storage driver but changes it to use Wasabi endpoi
 
 ```bash
 composer require siberfx/wasabi-storage
-```
-
-If you are on Laravel 5.4 or earlier, then register the service provider in app.php
-```php
-'providers' => [
-    // ...
-    Siberfx\WasabiStorage\WasabiServiceProvider::class,
-]
 ```
 
 If you are on Laravel 5.5 or higher, composer will have registered the provider automatically for you.
