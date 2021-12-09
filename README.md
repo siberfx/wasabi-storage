@@ -14,9 +14,6 @@ This packages uses the AWS S3 storage driver but changes it to use Wasabi endpoi
 ```bash
 composer require siberfx/wasabi-storage
 ```
-
-If you are on Laravel 5.5 or higher, composer will have registered the provider automatically for you.
-
 Add a new disk to your `filesystems.php` config
 
 ```php
