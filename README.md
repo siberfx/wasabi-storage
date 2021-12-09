@@ -25,11 +25,13 @@ Add a new disk to your `filesystems.php` config
 ```php
 'wasabi' => [
     'driver' => 'wasabi',
-    'key' => env('WASABI_ACCESS_KEY_ID'),
-    'secret' => env('WASABI_SECRET_ACCESS_KEY'),
-    'region' => env('WASABI_DEFAULT_REGION', 'eu-central-1'),
-    'bucket' => env('WASABI_BUCKET'),
-    'root' => env('WASABI_ROOT', '/'),
+    'key' => env('S3_KEY'),
+    'secret' => env('S3_SECRET'),
+    'region' => env('S3_REGION', 'eu-central-1'),
+    'bucket' => env('S3_BUCKET'),
+    'root' => env('S3_ROOT', '/'),
+    'endpoint' => env('S3_ENDPOINT'),
+    'custom_s3_url' => env('S3_CUSTOM_URL', null), // if you used CDN through a provider like cloudflare, here is the url
 ],
 ```
 
