@@ -4,7 +4,7 @@ namespace Siberfx\WasabiStorage;
 
 use Storage;
 use Aws\S3\S3Client;
-use League\Flysystem\AwsS3v3\AwsS3Adapter;
+use League\Flysystem\AwsS3v3\AwsS3V3Adapter;
 use League\Flysystem\Filesystem;
 use Illuminate\Support\ServiceProvider;
 
@@ -43,7 +43,7 @@ class WasabiServiceProvider extends ServiceProvider
 
 			$client = new S3Client($conf);
 
-			$adapter = new AwsS3Adapter($client, $config['bucket'], $config['root']);
+			$adapter = new AwsS3V3Adapter($client, $config['bucket'], $config['root']);
 
 			$filesystem = new Filesystem($adapter);
 
